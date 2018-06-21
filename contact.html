@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" type = "text/css" href = "assets/css/reset.css">
+        <link rel = "stylesheet" type = "text/css" href = "assets/css/style.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src = "assets/javascript.js" type = "text/javascript"></script>
+        <title>
+            Cefi Menda Portfolio
+        </title>
+    </head>
+    
+    <body>
+        <div class ="headerContainer">
+            <div class = "header">
+                <div class = "pageLogoBox">
+                    Cefi Menda
+                </div>
+                <div class = "menuBar">
+                    <div class = "buttonHolder">
+                        <div class = "button1">
+                            <button>About</button>
+                        </div>
+                        <div class = "button2">
+                            <button>Portfolio</button>
+                        </div>
+                        <div class = "button3">
+                            <button class = "active">Contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "menuContainer">
+                <div class = "buttonHolder">
+                    <div class = "button1">
+                        <button class = "active">About</button>
+                    </div>
+                    <div class = "button2">
+                        <button>Portfolio</button>
+                    </div>
+                    <div class = "button3">
+                        <button>Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "bigContainer">
+        <div class = "bodyContainer">
+                <div class = "bodyTitleContainer">
+                    Contact
+                </div>
+                <div class = "bodyText">
+                    <form action = "/contactForm" method = "post">
+                        <label>Name
+                            <input type = "text" placeholder = "John Smith" name = "name">
+                        </label>
+                        <label>Email
+                            <input type = "text" placeholder = "example@gmail.com" name = "email">
+                        </label>
+                        <label>Message
+                            <textarea type = "text" placeholder = "Please enter your message here." name = "name"></textarea>
+                        </label>
+                        <!-- Not using a button with type submit since we aren't looking into creating a truly responsive form -->
+                        <button type = "button" class = "submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class = "footer">
+            Copyright
+        </div>
+    </body>
+</html>
