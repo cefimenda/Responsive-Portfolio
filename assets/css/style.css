@@ -89,6 +89,12 @@ body{
     z-index: -1;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);    
 }
+.bigContainer{
+    animation:none;
+    animation-name:fade-in;
+    animation-duration:1s;
+    animation-timing-function: ease-in-out;
+}
 .bodyContainer {
     display: block;
     margin: auto;
@@ -387,38 +393,11 @@ button[type = "submit"]:active, button.submit:active{
 }
 
 
+@keyframes fade-in{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 
 
-/* 
-@media only screen and (max-width: 640px) {
-    .pageLogoBox{
-        width:100%;
-        display:block;
-        padding:30px;
-        height:auto;
-    }
-    .header{
-        height:40px;
-        display:block;
-        position:static;
-        width: 100%;
-        transform: none;
-    }
-    .headerContainer{
-        height: auto;
-        display:block;
-        position:static;
-        width:100%;
-    }
-    .menuBar{
-        display: none;
-    }
-    .hiddenMenuBar{
-        display:block;
-        margin-left:auto;
-        width:50%;
-    }
-
-} */
 
 
